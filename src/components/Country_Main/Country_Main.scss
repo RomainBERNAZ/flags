@@ -1,0 +1,19 @@
+.country-main{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+  margin-left: 3vw;
+  .country{
+      width: 28vw;
+      height: auto;
+      background: #2b3945;
+      margin-top: 5vh;
+      border-radius: 15px ;
+      img{
+          width: 28vw;
+      }
+      p, h3{
+          margin-left: 2vw;
+      }
+  }
+}

@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background: hsl(209, 23%, 22%);
+    color: white;
+    align-items: center;
+
+    h1{
+        margin-left: 5vw;
+    }
+
+    span{
+        margin-right: 5vw;
+    }
+
+    @media screen and (max-width: 800px) {
+        h1, span{
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.country-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+  margin-left: 3vw;
+}
+
+.country-main .country {
+  width: 28vw;
+  height: auto;
+  background: #2b3945;
+  margin-top: 5vh;
+  border-radius: 15px;
+}
+
+.country-main .country img {
+  width: 28vw;
+}
+
+.country-main .country p, .country-main .country h3 {
+  margin-left: 2vw;
+}
+/*# sourceMappingURL=Country_Main.css.map */

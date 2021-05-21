@@ -1,0 +1,67 @@
+.main-filter {
+  min-height: 90vh;
+  max-width: 100vw;
+  background: #202c37;
+  color: white;
+}
+
+.main-filter .filter-row {
+  padding-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10vh;
+  width: 100vw;
+}
+
+.main-filter .filter-row .filter {
+  margin-left: 5vh;
+}
+
+.main-filter .filter-row .filter input {
+  height: 6vh;
+  font-size: 1.5rem;
+  background: #2b3945;
+  padding-left: 0.6em;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-filter .filter-row .filter ::-webkit-input-placeholder {
+  color: white;
+}
+
+.main-filter .filter-row .filter :-ms-input-placeholder {
+  color: white;
+}
+
+.main-filter .filter-row .filter ::-ms-input-placeholder {
+  color: white;
+}
+
+.main-filter .filter-row .filter ::placeholder {
+  color: white;
+}
+
+.main-filter .filter-row select {
+  margin-right: 5vw;
+  font-size: 1.3rem;
+  height: 6vh;
+  padding-left: 0.6em;
+  border: none;
+  border-radius: 5px;
+  padding-right: 0.6em;
+  background: #2b3945;
+  color: white;
+}
+
+.main-filter .filter-row select option {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=Main_Filter.css.map */
