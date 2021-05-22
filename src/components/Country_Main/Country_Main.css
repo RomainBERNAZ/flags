@@ -9,9 +9,17 @@
 
 .country-main .country {
   width: 28vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: auto;
+  margin-bottom: 5vh;
+  padding-bottom: 2vh;
   background: #2b3945;
-  margin-top: 5vh;
   border-radius: 15px;
 }
 
@@ -19,7 +27,29 @@
   width: 28vw;
 }
 
+.country-main .country .card-info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .country-main .country p, .country-main .country h3 {
   margin-left: 2vw;
+}
+
+.country-main .country h3 {
+  font-size: 3rem;
+}
+
+.country-main .country p {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=Country_Main.css.map */

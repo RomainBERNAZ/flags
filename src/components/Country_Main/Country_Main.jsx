@@ -14,10 +14,12 @@ const Country_Main = ( array ) => {
                         return(
                             <div className="country" key={item.numericCode}>
                                 <img src={item.flag} alt="" />
+                                <div className="card-info">
                                 <h3>{item.name}</h3>
-                                <p>Population : {item.population}</p>
-                                <p>Region : {item.region}</p>
-                                <p>Capitale : {item.capital}</p>
+                                    <p>Population : {item.population}</p>
+                                    <p>Region : {item.region}</p>
+                                    <p>Capitale : {item.capital}</p>
+                                </div>
                         </div>
                         )
                     })

@@ -1,3 +1,7 @@
+$red: #2b3945;
+
+
+
 .country-main{
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -5,15 +9,30 @@
   margin-left: 3vw;
   .country{
       width: 28vw;
+      display: flex;
+      flex-direction: column;
       height: auto;
-      background: #2b3945;
-      margin-top: 5vh;
+      margin-bottom: 5vh;
+      padding-bottom: 2vh;
+      background: $red;
       border-radius: 15px ;
       img{
           width: 28vw;
       }
+      .card-info{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
       p, h3{
           margin-left: 2vw;
+      }
+      h3{
+          font-size: 3rem;
+      }
+      p{
+          font-size: 1.2rem;
       }
   }
 }

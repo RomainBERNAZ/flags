@@ -1,6 +1,5 @@
 .main-filter{
     min-height: 90vh;
-    max-width: 100vw;
     background:hsl(207, 26%, 17%);
     color: white;
 
@@ -10,7 +9,6 @@
         align-items: center;
         justify-content: space-between;
         height: 10vh;
-        width: 100vw;
         .filter{
             margin-left: 5vh;
             input{

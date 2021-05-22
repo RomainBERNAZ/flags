@@ -6,6 +6,35 @@ import './Main_Filter.css'
 const Main_Filter = () => {
 
     const [ array, setArray ] = useState([])
+    const [ inputText, SetInputText ] = useState('')
+
+    const getAll = async () => {
+
+        await axios.get(`https://restcountries.eu/rest/v2/all`)
+        .then(function (response) {
+            setArray(response.data)
+          })
+          .catch(function (error) {
+          })
+          .then(function () {
+          });
+
+    }
+
+    const filterRegion = async (e) => {
+
+        await axios.get(`https://restcountries.eu/rest/v2/region/${e}`)
+        .then(function (response) {
+            SetInputText(e)
+            setArray(response.data)
+          })
+          .catch(function (error) {
+          })
+          .then(function () {
+          });
+
+    }
+
 
     const getInfo = async(e) =>  {
 
@@ -19,16 +48,15 @@ const Main_Filter = () => {
               .then(function () {
               });
         }
-        else{
-            setArray([])
+        
+        else {
+            getAll();
         }
     }
 
-    const filterRegion = (e) => {
-        array.filter( item =>  item.region === {e})
-    }
     
     useEffect(() => {
+        getAll();
     }, [])
 
 
@@ -42,7 +70,7 @@ const Main_Filter = () => {
             <select name="" id="" onChange={(e) => filterRegion(e.target.value)}>
                 <option defaultValue>Filter by Region</option>
                 <option value="Africa">Africa</option>
-                <option value="America">America</option>
+                <option value="Americas">America</option>
                 <option value="Asia">Asia</option>
                 <option value="Europe">Europe</option>
                 <option value="Oceania">Oceania</option>
